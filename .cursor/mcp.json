@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "eva-command": {
+      "command": "node",
+      "args": [
+        "/home/xxx/xxx/eva-mcp/packages/eva-mcp-server/dist/mcp-server.js"
+      ]
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "eva-mcp-server",
+  "version": "0.0.1",
+  "private": true,
+  "module": "esnext",
+  "type": "module",
+  "scripts": {
+    "start:sse": "node dist/sse-server.js",
+    "start:stdio": "node dist/stdio-server.js",
+    "start:dev": "tsx src/sse-server.ts",
+    "dev": "tsup --watch",
+    "build": "tsup",
+    "check-types": "tsc --noEmit"
+  },
+  "main": "dist/server.js",
+  "types": "dist/server.d.ts",
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@gitbeaker/rest": "^42.1.0",
+    "@modelcontextprotocol/sdk": "^1.7.0",
+    "dotenv": "^16.4.7",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "tsup": "^8.4.0"
+  }
+}
